@@ -1,7 +1,7 @@
 export const Header = () => {
     return(
         <div className="header"> 
-            <h1>Aqui é um cabeçalho </h1>
+            <h1>Dio Bank</h1>
         </div>
     )
 }

@@ -28,7 +28,14 @@ body {
   font-size: 1.4rem;
   padding: 1rem;
 
+  .label{
+    margin-top: 1rem;
+  }
 
+  input{
+    margin: .5rem 0rem;
+    border: solid black .1rem;
+  }
 }
 
 .header {
@@ -44,15 +51,4 @@ body {
   position: absolute;
   bottom: 0;
   left: 65rem;
-}
-
-.card {
-  border: solid darkcyan .1rem;
-  margin-bottom: 1.5rem;
-  padding: .5rem;
-
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
 }
