@@ -9,46 +9,35 @@
 :root {
   --background: #fdfdfd;
   --foreground: #171717;
+  --border: #BA7202;
   font-size: 62.5%;
 }
 
-/* Tema escuro */
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #171717;
-    --foreground: #fdfdfd;
-  }
-} */
-
-
 body {
-  background: var(--background);
+  background: var(--border);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   padding: 1rem;
-
-  .label{
-    margin-top: 1rem;
-  }
-
-  input{
-    margin: .5rem 0rem;
-    border: solid black .1rem;
-  }
 }
 
-.header {
-  h1 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
+main{
+  display: flex;
+  justify-content: flex-end;
 }
 
-.footer {
-  padding: .5rem;
-  font-size: 1.2rem;
-  position: absolute;
-  bottom: 0;
-  left: 65rem;
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--background);
+  margin-top: 5rem;
+  margin-right: 2rem;
+  padding: 3rem;
+  width: 70rem;
+  height: 50rem;
+}
+
+.inputs{
+  margin-top: -5rem;
 }

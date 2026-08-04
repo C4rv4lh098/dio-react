@@ -1,7 +1,7 @@
 export const Footer = () => {
     return (
-        <div className="footer">
-            <p>DIO BANK 2026</p>
-        </div>
+        <>
+            <p className="absolute bottom-0 left-1/2 -translate-x-1/2 p-2 text-xl">DIO BANK 2026</p>
+        </>
     )
 }
