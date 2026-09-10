@@ -7,14 +7,14 @@
 }
 
 :root {
-  --background: #fdfdfd;
+  --background: #933cac;
   --foreground: #171717;
-  --border: #BA7202;
+  --fontcolor: #fff;
   font-size: 62.5%;
 }
 
 body {
-  background: var(--border);
+  background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
@@ -23,21 +23,27 @@ body {
 
 main{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  color: var(--fontcolor);
+
+  h1{
+    font-size: 2.4rem;
+  }
 }
 
 .login{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: var(--background);
-  margin-top: 5rem;
-  margin-right: 2rem;
-  padding: 3rem;
+  border: solid .3rem white;
+  border-radius: 1.2rem;
+  padding: 2rem;
   width: 70rem;
-  height: 50rem;
+  height: 60rem;
 }
 
 .inputs{
   margin-top: -5rem;
+  font-size: 2rem;
 }
