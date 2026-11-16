@@ -1,15 +1,40 @@
+import { Button } from "@/components/Button";
+import { Input } from "@/components/Input";
+import { login } from "@/service/login";
+
 interface ICard{
-    id: number
-    paragraph: string
-    detais: string
+    id: string
+    titulo: string
 }
 
-export const Card = ({id, paragraph, detais}: ICard) =>{
+export const Card = ({id, titulo}: ICard) =>{
     return(
-        <div className="card">
-            <h1>Card {id}</h1>
-            <p>{paragraph}</p>
-            <p>{detais}</p>
-        </div>
-    )
+        <>
+        <div className={id}>
+            <h1 className="text-center">{titulo}</h1>
+            <div className="inputs">
+            <div className="grid grid-col gap-8 place-content-center">
+                <Input
+                id="emailInput"
+                label="Email"
+                description=" Adicione o email"
+                type="email"
+                />
+                <Input
+                id="passwordInput"
+                label="Senha"
+                description=" Informe a senha"
+                type="password"
+                />
+            </div>
+            </div>
+            <Button 
+            onClick={login}
+            id="login"
+            label="LOGIN"
+            color="#fdfdfd"
+            />
+      </div>
+    </>
+    );
 }
