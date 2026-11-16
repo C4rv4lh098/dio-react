@@ -1,5 +1,7 @@
 // import { Card } from "@/components/Card";
+import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
+import { login } from "@/service/login";
 
 export default function Home() {
   return (
@@ -22,6 +24,12 @@ export default function Home() {
             />
         </div>
         </div>
+        <Button 
+          onClick={login}
+          id="login"
+          label="LOGIN"
+          color="#fdfdfd"
+        />
       </div>
     </>
   );

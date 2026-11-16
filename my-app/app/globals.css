@@ -41,9 +41,19 @@ main{
   padding: 2rem;
   width: 70rem;
   height: 60rem;
+  align-items: center;
 }
 
 .inputs{
   margin-top: -5rem;
+  margin-bottom: -10rem;
   font-size: 2rem;
 }
+
+button{
+  cursor: pointer;
+}
+
+#login{
+    color: black
+  }
